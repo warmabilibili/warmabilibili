@@ -3,7 +3,6 @@
     <title>MARMA</title>
     <link rel="shortcut icon" type="image/jpg" href="imgs/head.ico"/>
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-    <link type="text/css" rel="stylesheet" href="/template/default/images/style.css" />
   </head>
   <style>
   img {
@@ -14,9 +13,21 @@
   body  {
     background-color: #222222;
   }
+  .movedown {
+    position: absolute;
+    animation: down 3s 2;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes down {
+    0% {right: 10%; top: -300px;}
+    100% {right: 10%; top: -20px;}
+  }
 
   </style>
   <body>
+    <img src="imgs/spider.png" class='movedown' height='640'>
     <div id="top_box">
       <ul>
         <div>
